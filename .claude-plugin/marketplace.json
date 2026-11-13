@@ -6,7 +6,7 @@
       "name": "voucher-poc",
       "source": "./plugins/voucher-poc",
       "description": "플러그인 배포 테스트",
-      "version": "1.0.1"
+      "version": "1.0.2"
     }
   ]
 }
