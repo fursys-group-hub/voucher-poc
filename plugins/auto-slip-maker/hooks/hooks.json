@@ -1,0 +1,17 @@
+{
+  "description": "조회 API(call.py)를 부르기 전에 무엇을 부르는지 보여 주고 승인을 받는다",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|PowerShell",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python -X utf8 \"${CLAUDE_PLUGIN_ROOT}/hooks/ask_api.py\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}
